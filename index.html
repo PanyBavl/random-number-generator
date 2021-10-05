@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <div>
+            <input type="text" id="number_a" class="range" onkeypress="return isNumberKey(event)" placeholder="MIN">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" id="number_b" class="range" onkeypress="return isNumberKey(event)" placeholder="MAX">
+            <br>
+            <br>
+            <br>
+            <button class="button" onclick="generateRandomNumber()">GO!</button>
+            <div id="numberCase">
+                <p id="randomNumber"></p>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="script.js"></script>
+</html>
