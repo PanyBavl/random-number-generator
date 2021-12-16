@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="stylesheet.css">
+        <meta charset=utf-8" />
+        <meta name="viewport" content="width=device-" />
+        <meta name="description" content="A random number generator" />
+        <meta name=author" content="Baymon Blosser" />
+        <link rel="stylesheet" href="stylesheet.css" />
+        <link rel="icon" href="favicon.ico" />
+        <title>RANDOM NUMBER GENERATOR</title>
     </head>
     <body>
         <div>
@@ -19,16 +25,34 @@
             <br>
             <br>
             <br>
-            <button class="button" onclick="generateRandomNumber()">GO!</button>
+            <button class="button" onclick="generateRandomNumber();">GO!</button>
             <br>
             <br>
             <br>
             <br>
-            <br>
-            <br>
+            <div class="res">
+                Result:
+            </div>
             <div id="numberCase">
                 <p id="randomNumber"></p>
             </div>
+            <div class="?">
+                <button id="ins" onclick="on();">
+                    ?
+                </button>
+            </div>
+            <div id="overlay" onclick="off();">
+                To use the generator you must first set the range. <br>
+                Min is the the lowest number that can be generated, <br>
+                while max is the highest number that can be generated. <br>
+                To get a negative number, <br>
+                simply make the min higher than the max,<br>
+                as you cannot type "-". <br>
+                reason being is because typing anything into <br>
+                the generator other than a number results in NAN.
+                <p id="sm">(click anywhere to close!)</p> 
+            </div>
+            <p id="crsym">© Baymon Blosser 2021 - 2022 </p>
         </div>
     </body>
     <script type="text/javascript" src="script.js"></script>
