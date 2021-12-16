@@ -1,5 +1,5 @@
 // should be obvious what this does...
-
+let year = d.getFullYear();
 function generateRandomNumber() {
     var min = document.getElementById('number_a').value
     var max = document.getElementById('number_b').value
@@ -10,8 +10,10 @@ function generateRandomNumber() {
         document.getElementById('randomNumber').innerHTML = `${random} <div id="easteregg"> (haha funni number 😎) </div>`;
     } else if (random == 420) {
         document.getElementById('randomNumber').innerHTML = `${random} <div id="easteregg"> smoke weed everyday 🚬 </div>`;
-    } else if (random == 67294383) {
-    document.getElementById('randomNumber').innerHTML = `<div id="secret"> ${random}...? </div>` 
+    } else if (random == 666) { 
+        document.getElementById('randomNumber').innerHTML = `${random} <div id="easteregg"> don't deal with the devil 😈 </div>`; 
+    } else if (random == 67294383) { 
+        document.getElementById('randomNumber').innerHTML = `<div id="secret"> ${random}...? </div>`;
     } else {
         document.getElementById('randomNumber').innerHTML = random;
     }
